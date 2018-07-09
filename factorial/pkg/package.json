@@ -1,0 +1,16 @@
+{
+  "name": "wasmpack-example-factorial",
+  "collaborators": [
+    "Matt Harrison <hi@matt-harrison.com>"
+  ],
+  "description": null,
+  "version": "0.1.0",
+  "license": null,
+  "repository": null,
+  "files": [
+    "wasmpack_example_factorial_bg.wasm",
+    "wasmpack_example_factorial.d.ts"
+  ],
+  "main": "wasmpack_example_factorial.js",
+  "types": "wasmpack_example_factorial.d.ts"
+}

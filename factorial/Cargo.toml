@@ -1,0 +1,10 @@
+[package]
+name = "wasmpack-example-factorial"
+version = "0.1.0"
+authors = ["Matt Harrison <hi@matt-harrison.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
