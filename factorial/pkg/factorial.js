@@ -1,5 +1,5 @@
 /* tslint:disable */
-import * as wasm from './wasmpack_example_factorial_bg';
+import * as wasm from './factorial_bg';
 
 export function factorial(arg0) {
     return wasm.factorial(arg0);

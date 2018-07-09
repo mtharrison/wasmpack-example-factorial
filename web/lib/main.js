@@ -1,16 +1,23 @@
-import('wasmpack-example-factorial').then((module) => {
+(async function () {
 
-    const input = document.getElementById('input');
-    const output = document.getElementById('output');
+	const module = await import('factorial');
 
-    const calculate = () => {
+	const input = document.getElementById('input');
+	const output = document.getElementById('output');
 
-        const number = parseInt(input.value);
-        const result = module.factorial(number);
-        output.innerText = `${result}`;
-    };
+	const calculate = () => {
 
-    calculate();
+		const number = parseInt(input.value);
+		const result = module.factorial(number);
+		output.innerText = `${result}`;
+	};
 
-    input.addEventListener('input', calculate);
-});
+	// Calculate on load
+
+	calculate();
+
+	// Calculate on input
+
+	input.addEventListener('input', calculate);
+
+})();

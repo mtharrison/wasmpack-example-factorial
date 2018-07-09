@@ -1,32 +1,36 @@
-.fac {
-    font-size: 50px;
-    font-weight: bold;
-    font-family: monospace;
-    text-align: center;
-    padding-top: 50px;
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#fac {
+	font-size: 60px;
+	font-weight: bold;
+	font-family: monospace;
+	text-align: center;
+	padding-top: 50px;
 }
 
 #input {
-    height: 35px;
-    width: 85px;
-    vertical-align: middle;
-    font-size: 30px;
-    border: 0;
-    font-size: 50px;
-    font-weight: bold;
-    font-family: monospace;
-    outline: 0;
+	height: 50px;
+	width: 85px;
+	border: 0;
+	font-size: 60px;
+	font-weight: bold;
+	font-family: monospace;
+	outline: 0;
 }
 
+#input::selection {
+	background: none;
+}
 
 p {
-    padding: 0px;
-    margin: 0px;
+	padding: 0px;
+	margin: 0px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
-
    opacity: 1;
-
 }
