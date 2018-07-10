@@ -1,23 +1,23 @@
 (async function () {
 
-	const module = await import('factorial');
+    const module = await import('factorial');
 
-	const input = document.getElementById('input');
-	const output = document.getElementById('output');
+    const input = document.getElementById('input');
+    const output = document.getElementById('output');
 
-	const calculate = () => {
+    const calculate = () => {
 
-		const number = parseInt(input.value);
-		const result = module.factorial(number);
-		output.innerText = `${result}`;
-	};
+        const number = parseInt(input.value);
+        const result = module.factorial(number);
+        output.innerText = `${result}`;
+    };
 
-	// Calculate on load
+    // Calculate on load
 
-	calculate();
+    calculate();
 
-	// Calculate on input
+    // Calculate on input
 
-	input.addEventListener('input', calculate);
+    input.addEventListener('input', calculate);
 
 })();
